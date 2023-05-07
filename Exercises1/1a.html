@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Basic</title>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        border: none;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+
+      body {
+        margin: 20px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .uber {
+        background-color: black;
+        color: white;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+      }
+
+      .amazon {
+        background-color: rgb(255, 215, 20);
+        padding: 0.8rem 5rem;
+        font-size: 1.3rem;
+        border-radius: 50px;
+      }
+
+      .github {
+        background-color: rgb(46, 164, 79);
+        color: white;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+      }
+
+      .bootstrap {
+        display: block;
+      }
+
+      .bootstrap button:first-child {
+        background-color: rgb(121, 82, 179);
+        padding: 1rem 2rem;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 5px;
+      }
+
+      .bootstrap button:last-child {
+        color: rgb(108, 117, 125);
+        border: 1px solid rgb(108, 117, 125);
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .linkedln {
+        display: block;
+      }
+
+      .linkedln button:first-child {
+        background-color: rgb(10, 102, 194);
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: .8rem 1.5rem;
+        border-radius: 50px;
+      }
+
+      .linkedln button:last-child {
+        padding: .8rem 1.5rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border: 1px solid rgb(10, 102, 194);
+        color: rgb(10, 102, 194);
+        background-color: transparent;
+        border-radius: 50px;  
+      }
+    </style>
+  </head>
+  <body>
+    <button class="uber">Request now</button>
+    <button class="amazon">Add to Cart</button>
+    <button class="github">Sign up</button>
+    <div class="bootstrap">
+      <button>Get started</button>
+      <button>Download</button>
+    </div>
+    <div class="linkedln">
+      <button>Apply on company website</button>
+      <button>Save</button>
+    </div>
+  </body>
+</html>
