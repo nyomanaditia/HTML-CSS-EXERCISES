@@ -11,6 +11,11 @@
       padding: 10px 15px;
       border: none;
       font-size: 12px;
+      transition: opacity 0.15s;
+      cursor: pointer;
+    }
+    .uber:hover {
+      opacity: 0.7;
     }
 
     .amazon {
@@ -19,6 +24,11 @@
       border: none;
       border-radius: 15px;
       font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .amazon:hover {
+      background-color: rgb(255, 192, 20);
     }
 
     .github {
@@ -29,6 +39,11 @@
       border-radius: 4px;
       font-size: 15px;
       border: none;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+    .github:hover {
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     }
 
     .bootstrap-started {
@@ -39,6 +54,11 @@
       border-radius: 5px;
       font-size: 15px;
       font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .bootstrap-started:hover {
+      background-color: rgb(103, 52, 179);
     }
 
     .bootstrap-download {
@@ -49,6 +69,12 @@
       font-weight: bold;
       background-color: transparent;
       border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .bootstrap-download:hover {
+      background-color: rgb(108, 117, 125);
+      color: white;
     }
 
     .linkedln-apply {
@@ -59,6 +85,11 @@
       padding: 12px 25px;
       border: none;
       border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .linkedln-apply:hover {
+      background-color: rgb(10, 68, 194);
     }
 
     .linkedln-save {
@@ -69,6 +100,56 @@
       padding: 12px 20px;
       font-size: 16px;
       font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.15s,
+        border-width 0.15s;
+    }
+    .linkedln-save:hover {
+      border-width: 2px;
+      background-color: rgb(226, 240, 254);;
+    }
+
+    .link-to-amazon {
+      color: rgb(0, 113, 133);
+      transition: color 0.15s;
+    }
+    .link-to-amazon:hover {
+      color: tomato;
+    }
+    
+    .price {
+      color: rgb(0, 118, 0);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .add-to-cart,
+    .buy-now {
+      padding: 8px 35px;
+      border: none;
+      border-radius: 15px;
+      font-size: 14px;
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+    .add-to-cart {
+      background-color: rgb(255, 216, 20);
+      margin-right: 10px;
+    }
+    .add-to-cart:hover {
+      background-color: rgb(255, 192, 20);
+    }
+    .add-to-cart:active {
+      opacity: 0.6;
+    }
+    .buy-now {
+      background-color: rgb(255, 164, 28);
+    }
+    .buy-now:hover {
+      background-color: rgb(255, 138, 28);
+    }
+    .buy-now:active {
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -100,5 +181,14 @@
   <button class="linkedln-save">
     Save
   </button>
+
+  <br><br>
+  
+  <a href="https://amazon.com" class="link-to-amazon" target="_blank">Back to Amazon</a>
+  <h2>Nike Black Running Shoes</h2>
+  <p class="price">$39 - in stock.</p>
+  <p>Free delivery tomorrow.</p>
+  <button class="add-to-cart">Add to Cart</button>
+  <button class="buy-now">Buy now</button>
 </body>
 </html>
