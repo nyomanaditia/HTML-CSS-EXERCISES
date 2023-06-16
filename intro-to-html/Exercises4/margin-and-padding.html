@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin And Padding</title>
+  <style>
+    .back, a {
+      margin: 5px;
+    }
+    .back {
+      padding: 8px 6px;
+    }
+    .stretch {
+      background-color: green;
+      border: none;
+      padding: 8px 15px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      transition: padding 1s;
+    }
+    .stretch:hover {
+      padding: 18px 36px;
+    }
+    .shadow {
+      background-color: green;
+      border: none;
+      padding: 8px 15px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+    }
+    .shadow:active {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+    .btn {
+      background-color: green;
+      border: none;
+      padding: 8px 15px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    .btn:hover {
+      padding: 8px 25px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <button class="back">Back</button>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <button class="back">Next</button>
+<br>
+  <button class="stretch">Stretch</button>
+  <br>
+  <button class="shadow">Shadow</button>
+  <br>
+  <button class="btn one">one</button>
+  <button class="btn two">two</button>
+  <button class="btn three">three</button>
+</body>
+</html>
