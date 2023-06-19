@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+    <style>
+      .name,
+      .email {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .survey {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .google-logo {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+      }
+      .search {
+        display: block;
+        margin: 15px auto;
+        width: 500px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="name" type="text" placeholder="Name" />
+    <input class="email" type="email" placeholder="Email" />
+    <p class="survey">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button>Yes</button>
+    <button>No</button>
+
+    <br /><br />
+
+    <img src="google-logo.png" alt="" class="google-logo" />
+    <input
+      type="text"
+      placeholder="Search Google or type a URL"
+      class="search"
+    />
+  </body>
+</html>

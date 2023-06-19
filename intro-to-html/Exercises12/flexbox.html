@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+    }
+    .card {
+      border: 1px solid grey;
+      width: 300px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      margin: 20px;
+    }
+    .home,
+    .notif,
+    .message {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .notif {
+      margin: 15px 0;
+    }
+    span {
+      background-color: blue;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .search-bar {
+      background-color: rgb(180, 81, 255);
+      display: flex;
+      max-width: 700px;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+    }
+    .search-bar p {
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+    .search-bar input {
+      flex: 1;
+      margin: 0 50px;
+      padding: 6px 25px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+    }
+    .search-bar button {
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 8px 15px;
+      font-size: 16px;
+      color: white;
+    }
+
+    .tweet-container {
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin-top: 30px;
+    }
+    .tweet-cat {
+      display: flex;
+      align-items: center;
+    }
+    .info {
+      flex: 1;
+    }
+    .cat-name {
+      font-weight: bold;
+    }
+    .cat-desc {
+      color: #666; 
+      margin-top: 5px;
+    }
+    .tweet-cat img {
+      width: 50px; 
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .tweet-cat button {
+      background-color: rgb(0, 106, 255);
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="home">
+      <p>Home</p>
+      <span>14</span>
+    </div>
+    <div class="notif">
+      <p>Notifications</p>
+      <span>3</span>
+    </div>
+    <div class="message">
+      <p>Messages</p>
+      <span>5</span>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <p>Home</p>
+    <input type="text" placeholder="Search">
+    <button>Download</button>
+  </div>
+
+  <div class="tweet-container">
+    <div class="tweet-cat">
+      <img src="cat.jpg" alt="">
+      <div class="info">
+        <p class="cat-name">Oliver</p>
+        <p class="cat-desc">the cat</p>
+        <p class="cat-desc">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+    <div class="tweet-cat">
+      <img src="cat.jpg" alt="">
+      <div class="info">
+        <p class="cat-name">Oliver</p>
+        <p class="cat-desc">the cat</p>
+        <p class="cat-desc">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+    <div class="tweet-cat">
+      <img src="cat.jpg" alt="">
+      <div class="info">
+        <p class="cat-name">Oliver</p>
+        <p class="cat-desc">the cat</p>
+        <p class="cat-desc">Popular</p>
+      </div>
+      <button>Follow</button>
+    </div>
+  </div>
+</body>
+</html>

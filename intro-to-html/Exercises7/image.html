@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+    .img1 {
+      width: 200px;
+      border-radius: 10px;
+    }
+    .img2 {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .img3 {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .input1 {
+      padding: 8px 10px;
+      border: 1px solid grey;
+      border-radius: 6px;
+    }
+    .input2 {
+      padding: 10px 15px;
+      border: none;
+      color: grey;
+      box-shadow: 0 0 5px rgba(0,0,0, 0.15);
+      width: 400px;
+      border-radius: 30px;
+    }
+    .label {
+      margin: 0;
+      font-size: 14px;
+      color: grey;
+    }
+    .email {
+      width: 335px;
+      padding: 5px;
+      margin-top: 8px;
+    }
+    .agree {
+      font-size: 14px;
+      color: grey;
+    }
+    .join {
+      background-color: blue;
+      border: none;
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+      width: 350px;
+      font-size: 16px;
+      border-radius: 50px;
+    }
+    .img4 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+    .input3 {
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      outline: none;
+    }
+    .tweet {
+      border: none;
+      background-color: rgb(0, 162, 255);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+<body>
+  <img class="img1" src="cat.jpg" alt="">
+  <img src="cat.jpg" alt="" class="img2">
+  <img src="cat.jpg" alt="" class="img3">
+
+  <input type="text" placeholder="Search" class="input1">
+  <input type="text" placeholder="Search Google or type a URL" class="input2">
+  <br><br>
+  <p class="label">Email</p>
+  <input class="email" type="email">
+  <p class="agree">By clicking Agree &amp; Join, you agree to the Privacy Policy.</p>
+  <button class="join">Agree &amp; Join</button>
+  <br><br>
+  <img src="cat.jpg" alt="" class="img4">
+  <input type="text" class="input3" placeholder="What's happening?"> 
+  <button class="tweet">Tweet</button>
+</body>
+</html>

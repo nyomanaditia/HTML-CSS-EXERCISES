@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 20px;
+    }
+
+    .profile {
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .profile-picture {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 10px;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .mutual-friend-row {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .mutual-friend-picture {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .mutual-friend {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .add-friend-btn {
+      background-color: rgb(0, 149, 255);
+      color: white;
+      padding: 8px 15px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="profile">
+      <img class="profile-picture" src="cat.jpg" alt="">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <div class="mutual-friend-row">
+          <img class="mutual-friend-picture" src="cat.jpg" alt="">
+          <p class="mutual-friend">2 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img class="profile-picture" src="cat.jpg" alt="">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <div class="mutual-friend-row">
+          <img class="mutual-friend-picture" src="cat.jpg" alt="">
+          <p class="mutual-friend">2 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img class="profile-picture" src="cat.jpg" alt="">
+      <div class="info">
+        <p class="name">Oliver</p>
+        <div class="mutual-friend-row">
+          <img class="mutual-friend-picture" src="cat.jpg" alt="">
+          <p class="mutual-friend">2 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

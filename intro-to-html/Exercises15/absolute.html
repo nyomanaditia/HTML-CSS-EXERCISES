@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>absolute</title>
+  <style>
+    * {
+      font-family: Roboto, Arial;
+    }
+    .close {
+      position: absolute;
+      background-color: black;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      top: -15px;
+      left: -15px;
+    }
+    .bottom-right {
+      background-color: #777;
+      width: 320px;
+      height: 180px;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      border: none;
+    }
+    .timestamp {
+      position: absolute;
+      background-color: black;
+      color: white;
+      bottom: 8px;
+      right: 8px;
+      margin: 0;
+      padding: 4px 6px;
+    }
+    .container-shirt {
+      position: relative;
+      width: 250px;
+    }
+    .shirt {
+      width: 100%;
+      height: 300px;
+    }
+    .discount {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      margin: 0;
+      background-color: black;
+      padding: 8px 14px;
+      color: white;
+    }
+    .add-to-cart-container {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.6);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .add-to-cart-btn {
+      padding: 8px 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bottom-right">
+    <button class="close">X</button>
+    <p class="timestamp">0:29</p>
+  </div>
+  <div class="container-shirt">
+    <img class="shirt" src="shirt.jpg" alt="">
+    <p class="discount">20% OFF</p>
+    <div class="add-to-cart-container">
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

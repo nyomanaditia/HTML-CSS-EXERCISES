@@ -1,0 +1,133 @@
+img,
+button {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  z-index: 1;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu {
+  width: 24px;
+  margin: 0 24px;
+}
+.youtube-logo {
+  height: 20px;
+}
+.middle-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.search-bar {
+  max-width: 350px;
+  flex: 1;
+  height: 36px;
+  width: 0;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(209, 209, 209);
+}
+.search-bar:focus {
+  border-color: blue;
+  border-radius: 2px 0 0 2px;
+}
+.search-bar::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.search-btn {
+  width: 60px;
+  height: 36px;
+  border: 1px solid rgb(210, 210, 210);
+  margin-right: 10px;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.voice-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: none;
+}
+
+.search-btn img,
+.voice-btn img {
+  height: 24px;
+  margin-top: 4px;
+}
+
+.right-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.right-section-icon {
+  height: 24px;
+}
+
+.my-channel-icon {
+  height: 32px;
+  border-radius: 16px;
+}
+.notifications-container {
+  position: relative;
+}
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-btn,
+.voice-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: grey;
+  padding: 4px 10px;
+  border-radius: 2px;
+  color: white;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-btn:hover .tooltip {
+  opacity: 1;
+}
